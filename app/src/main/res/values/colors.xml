@@ -1,0 +1,20 @@
+<!--?xml version="1.0" encoding="UTF-8"?--><!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+    <color name="primaryColor">#1976d2</color>
+    <color name="primaryDarkColor">#004ba0</color>
+    <color name="secondaryColor">#006064</color>
+    <color name="secondaryLightColor">#428e92</color>
+    <color name="secondaryDarkColor">#00363a</color>
+    <color name="primaryTextColor">#000</color>
+    <color name="secondaryTextColor">#000</color>
+
+    <color name="whiteTextColor">#fff</color>
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="lightWhite">#fafafa</color>
+    <color name="lightSky">#42a5f5</color>
+    <color name="priceColor">#ff6d00</color>
+</resources>

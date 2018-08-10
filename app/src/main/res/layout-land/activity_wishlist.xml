@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <elamien.abdullah.shopemall.LabelKenBurnsView
+                android:id="@+id/wishListProductDetailsImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/product_details_activity_image_height"
+                android:layout_weight="1"
+                android:contentDescription="@string/content_description_product_image"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                app:label_backgroundColor="@android:color/holo_red_dark"
+                app:label_distance="@dimen/product_details_activity_image_label_distance"
+                app:label_orientation="LEFT_TOP" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wishListProductDetailsNameTextView"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/product_details_activity_product_name_margin"
+                    android:layout_marginTop="@dimen/product_details_activity_name_margin_top"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:textSize="@dimen/product_details_activity_name_text_size"
+                    tools:text="@string/label_product_name" />
+
+                <TextView
+                    android:id="@+id/wishListProductDetailsHashTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/hashtag_background"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/product_details_activity_hashtag_padding"
+                    android:textColor="@color/secondaryTextColor"
+                    tools:text="@string/label_hashtag" />
+
+                <TextView
+                    android:id="@+id/wishListProductDetailsDiscountPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/product_details_activity_price_margin_end"
+                    android:layout_marginTop="@dimen/product_details_activity_price_margin_top"
+                    android:textColor="@color/priceColor"
+                    android:textSize="@dimen/product_details_activity_price_text_size"
+                    tools:text="@string/label_product_discount_price" />
+
+                <TextView
+                    android:id="@+id/wishListProductDetailsTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/product_details_activity_price_margin_end"
+                    android:layout_marginTop="@dimen/product_details_activity_price_margin_top"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/product_details_activity_price_text_size"
+                    tools:text="@string/label_product_price" />
+
+                <TextView
+
+                    android:id="@+id/wishListProductDetailsDescriptionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/product_details_activity_description_margin"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/product_details_activity_description_text_size"
+                    tools:text="@string/label_product_description" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/wishListProductFABMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:contentDescription="@string/content_description_product_options_fab_menu"
+        app:layout_anchorGravity="bottom|right|end">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/wishListAddToCartFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_add_to_cart_fab"
+            fab:fab_label="@string/add_product_cart_fab_label"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/wishListRemoveFromWishListFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_remove_wishlist_fab"
+            fab:fab_label="@string/remove_product_wishlist_fab_label"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/wishListShareProductFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_share_product_fab"
+            fab:fab_label="@string/share_fab_label"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+</android.support.design.widget.CoordinatorLayout>

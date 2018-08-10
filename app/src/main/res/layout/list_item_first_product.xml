@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstProductListParent"
+    style="@style/CardViewStyle"
+    android:layout_margin="@dimen/first_product_list_item_card_margin"
+    app:cardPreventCornerOverlap="false"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+    card_view:elevation="@dimen/cardview_default_elevation">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <elamien.abdullah.shopemall.LabelKenBurnsView
+            android:id="@+id/firstProductLabelKenBurnsView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/first_product_list_item_image_height"
+            android:contentDescription="@string/content_description_product_image"
+            app:label_backgroundColor="@android:color/holo_red_dark"
+            app:label_distance="@dimen/first_product_list_item_image_label_distance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/firstProductNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/first_product_list_item_name_margin_start"
+            android:layout_marginTop="@dimen/first_product_list_item_name_margin_top"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstProductLabelKenBurnsView"
+            tools:text="@string/label_product_name" />
+
+        <TextView
+            android:id="@+id/firstProductDescriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/first_product_list_item_description_margin_end"
+            android:layout_marginStart="@dimen/first_product_list_item_description_margin_start"
+            android:layout_marginTop="@dimen/first_product_list_item_description_margin_top"
+            android:fontFamily="@font/poppins_light"
+            android:maxLines="2"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstProductNameTextView"
+            tools:text="@string/label_product_description" />
+
+        <TextView
+            android:id="@+id/firstProductPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/first_product_list_item_price_margin_end"
+            android:layout_marginTop="@dimen/first_product_list_item_price_margin_top"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstProductLabelKenBurnsView"
+            tools:text="@string/label_product_price" />
+
+        <ImageButton
+            android:id="@+id/firstAddProductWishlistImageButton"
+            android:layout_width="@dimen/first_product_list_item_wishlist_button_width"
+            android:layout_height="@dimen/first_product_list_item_wishlist_button_height"
+            android:layout_marginBottom="@dimen/first_product_list_item_wishlist_button_margin_bottom"
+            android:layout_marginEnd="@dimen/first_product_list_item_wishlist_button_margin_end"
+            android:layout_marginTop="@dimen/first_product_list_item_wishlist_button_margin_top"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_description_add_to_wishlist_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstProductDescriptionTextView"
+            app:srcCompat="@drawable/ic_add_wishlist_black" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

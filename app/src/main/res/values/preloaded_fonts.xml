@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cabin</item>
+        <item>@font/dosis_semibold</item>
+        <item>@font/poppins</item>
+        <item>@font/poppins_light</item>
+        <item>@font/poppins_medium</item>
+        <item>@font/roboto_medium</item>
+        <item>@font/rubik</item>
+        <item>@font/rubik_light</item>
+        <item>@font/rubik_medium</item>
+        <item>@font/ubuntu_bold</item>
+        <item>@font/ubuntu_light</item>
+    </array>
+</resources>

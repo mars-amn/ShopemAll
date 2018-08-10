@@ -1,0 +1,75 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardPreventCornerOverlap="false"
+    card_view:cardCornerRadius="@dimen/card_view_corner_radius"
+    card_view:elevation="@dimen/card_view_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/order_activity_card_info_label_margin_end"
+            android:layout_marginStart="@dimen/order_activity_card_info_label_margin_start"
+            android:layout_marginTop="@dimen/order_activity_card_info_label_margin_top"
+            android:text="@string/label_credit_card_information"
+            android:textColor="#1565c0" />
+
+        <com.braintreepayments.cardform.view.CardForm
+            android:id="@+id/creditCardForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/order_activity_card_form_margin_end"
+            android:layout_marginStart="@dimen/order_activity_card_form_margin_start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/order_activity_card_details_parent_margin_end"
+            android:layout_marginStart="@dimen/order_activity_card_details_parent_margin_start"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:counterEnabled="true"
+                app:counterMaxLength="2">
+
+                <EditText
+                    android:id="@+id/creditCardExpirationMonthInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_exp_month"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:counterEnabled="true"
+                app:counterMaxLength="2">
+
+                <EditText
+                    android:id="@+id/creditCardExpirationYearInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_exp_year"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

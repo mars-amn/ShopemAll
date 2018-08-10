@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name" translatable="false">Shop\'em All</string>
+
+    <string name="order_status_msg">Orders status</string>
+    <string name="order_status_dialog_msg">Your order is being process, you can expect your items to be delivered within 2 decades   however, we will inform you with any further updates</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!--buttons text-->
+    <string name="button_order_text">Order</string>
+    <string name="button_proceed_to_order_text">Proceed to Order</string>
+
+    <!-- widget -->
+    <string name="content_description_product_image_widget">Product Image in widget</string>
+    <string name="label_product_name_widget">Product Name</string>
+    <string name="label_product_price_widget">Product Price</string>
+
+    <!-- labels -->
+    <string name="label_total_price_cart">Total: US </string>
+    <string name="label_featured_products">Featured Products</string>
+    <string name="label_information_order">Your information:</string>
+    <string name="label_credit_card_information">Credit Card details:</string>
+    <string name="label_name">Name</string>
+    <string name="label_address">Address</string>
+    <string name="label_phone_number">Phone No.</string>
+    <string name="label_price">price</string>
+    <string name="label_discount_price">Discount Price</string>
+    <string name="label_product_name">Product Name</string>
+    <string name="label_product_description">Product Description</string>
+    <string name="label_product_price">$12</string>
+    <string name="label_hashtag">#Category</string>
+    <string name="label_product_discount_price">$10</string>
+    <string name="label_cart_empty_state">Your Cart Is Empty,   Add some Items so you can order</string>
+    <string name="label_product_quantity">Quantity: </string>
+    <string name="label_discount_percentage">99.9% OFF</string>
+    <string name="label_category_name">Category Name</string>
+    <string name="label_order_status">Shipped</string>
+    <string name="label_user_name">User name</string>
+    <string name="label_order_payment">Order Payment</string>
+    <string name="label_cart_counter">0</string>
+    <string name="label_user_email">Email@email.email</string>
+    <string name="label_charged_msg">You\'re going to charged :</string>
+    <string name="percent_sale_off_label">% OFF</string>
+    <string name="cart_activity_label">Cart</string>
+    <string name="order_activity_label">Order</string>
+    <string name="label_order_price_saved">You saved</string>
+    <string name="remove_product_wishlist_fab_label">Remove from wish list</string>
+    <string name="add_product_wishlist_fab_label">Add to Wish list</string>
+    <string name="add_product_cart_fab_label">Add to cart</string>
+    <string name="share_fab_label">Share</string>
+    <string name="searchable_activity_label">Search Results</string>
+    <string name="wishlist_activity_label">Wishlist</string>
+    <string name="empty_state_wishlist_label">You don\'t have any products in your wishlist</string>
+    <string name="retry_connection_button_label">Retry</string>
+    <string name="empty_state_order_label">You didn\'t make any orders yet. :/</string>
+
+    <!-- content description-->
+    <string name="content_description_product_image">Product Image</string>
+    <string name="content_description_add_to_cart_fab">Add Product to Cart</string>
+    <string name="content_description_add_to_wishlist_fab">Add Product to Wishlist</string>
+    <string name="content_description_share_product_fab">Share Product with friends</string>
+    <string name="content_description_product_options_fab_menu">Product Options</string>
+    <string name="content_description_remove_wishlist_fab">Remove product from wishlist</string>
+    <string name="content_description_cart_empty_state">Your cart is empty image</string>
+    <string name="content_description_delete_from_cart_button">Delete Product from Cart Button</string>
+    <string name="content_description_decrease_button">Decrease Product Quantity</string>
+    <string name="content_description_increase_button">Increase Product Quantity</string>
+    <string name="content_description_category_image">Category Image</string>
+    <string name="content_description_add_to_wishlist_button">Add Product to your wishlist</string>
+    <string name="content_description_order_status_timeline">Order Status TimeLine</string>
+    <string name="content_description_cart_button">Cart Button</string>
+    <string name="content_description_user_profile_image">User Profile Image</string>
+    <string name="content_description_user_profile_background">Background Image</string>
+    <string name="content_description_header_image">Header Image</string>
+
+    <!-- edit text hints -->
+    <string name="hint_name">Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_zip">Zip</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_exp_month">Exp. Month</string>
+    <string name="hint_exp_year">Exp. Year</string>
+
+    <!-- toast messages -->
+    <string name="error_message">Oh, No!</string>
+
+    <!-- alerter messages -->
+    <string name="quantity_increase_msg">You Increased quantity by one</string>
+    <string name="product_remove_cart_msg">Product removed from the Cart</string>
+    <string name="quantity_decreased_msg">You decreased the quantity by One</string>
+    <string name="product_removed_wishlist_msg">Product Removed from the wish list</string>
+    <string name="cart_add_product_exists_alerter_msg">Product Exist in cart</string>
+    <string name="cart_add_product_increase_quantity_alerter_text">The product is already exist in your cart   it\'s quantity increased by 1</string>
+    <string name="cart_add_product_alerter_msg">Product added to your cart</string>
+    <string name="connection_alerter_title">Connection Required</string>
+    <string name="connection_alerter_text">Please Check your connection and try again!</string>
+
+    <!-- dialogs -->
+    <string name="delete_product_cart_dialog_title">Delete Cart Product</string>
+    <string name="delete_product_cart_first_part_dialog_message">Are you sure you want to delete</string>
+    <string name="delete_product_cart_second_part_dialog_message">from your cart list?</string>
+    <string name="order_key_label">Order key:</string>
+
+    <!-- order statuses -->
+    <string name="order_status_process">In Process</string>
+    <string name="order_status_packed">Packed</string>
+    <string name="order_status_shipped">Shipped</string>
+    <string name="order_status_arrived">Arrived</string>
+    <string name="order_status_delivered">Delivered</string>
+
+    <!-- order statuses labels-->
+    <string name="order_status_packed_label">Packed in country</string>
+    <string name="order_status_shipped_label">Order Shipped</string>
+    <string name="order_status_arrived_label">Order arrived</string>
+    <string name="order_status_delivered_label">Order delivered</string>
+    <string name="order_status_process_label">Order in Processing \n give us some time :)</string>
+
+    <!-- images headers -->
+    <string name="cart_header_image" translatable="false">https://goo.gl/8tkKRC</string>
+    <string name="main_activity_header_image" translatable="false"> https://goo.gl/83c1on</string>
+    <string name="user_orders_header_image">https://goo.gl/zHaoAa</string>
+
+    <!-- order error messages -->
+    <string name="order_credit_card_exp_year_error_msg">Please type the valid Expiration year</string>
+    <string name="order_credit_card_exp_month_error_msg">Please type the number of Expiration month!</string>
+    <string name="credit_card_validation_error_msg">Error, Card Not Valid!</string>
+    <string name="order_unsuccessful_error_msg">Something went wrong!</string>
+    <string name="order_name_hint_error_msg">Please type in your real name</string>
+    <string name="order_address_hint_error_msg">Please type in your address</string>
+    <string name="order_zip_hint_error_msg">Please type your ZIP code</string>
+    <string name="order_phone_hint_error_msg">Please type in your Phone Number</string>
+    <string name="order_email_hint_error_msg">Please type in your E-mail</string>
+    <string name="order_exp_month_hint_error_msg">Please type in the Card Expiration Month</string>
+    <string name="order_exp_year_hint_error_msg">Please type in the Card Expiration Year</string>
+    <string name="order_credit_card_details_error_msg">Please make sure you entered your Credit Card Number correctly</string>
+    <string name="order_credit_card_cvv_error_msg">Please make sure you entered your Credit Card CVV correctly</string>
+
+
+    <!-- share product texts with sale-->
+    <string name="share_product_sale_first_part">There is a sale on</string>
+    <string name="share_product_sale_for_part">for</string>
+    <string name="share_product_sale_second_part">instead of</string>
+    <string name="share_product_sale_on_part">on</string>
+    <string name="share_product_chooser_title">Product Share</string>
+
+    <!--menu items-->
+    <string name="menu_item_search_title">Search Products</string>
+    <string name="menu_item_cart_title">Cart</string>
+    <string name="menu_item_profile_title">Profile</string>
+    <string name="menu_item_wishlist_title">My Wishlist</string>
+    <string name="menu_item_sign_out_title">Sign out</string>
+
+
+</resources>

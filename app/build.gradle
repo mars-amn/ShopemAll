@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'nanodegree'
+            keyPassword 'password'
+            storeFile file("$rootDir/keystore.jks");
+            storePassword 'password'
+        }
+    }
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "elamien.abdullah.shopemall"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    /**
+     *  support library dependencies
+     **/
+    implementation 'com.android.support:appcompat-v7:' + rootProject.librariesVersions.supportLibraryVersion
+    implementation 'com.android.support:design:' + rootProject.librariesVersions.supportLibraryVersion
+    implementation 'com.android.support:cardview-v7:' + rootProject.librariesVersions.supportLibraryVersion
+    implementation 'com.android.support.constraint:constraint-layout:' + rootProject.librariesVersions.constraintLayoutVersion
+    /**
+     *  room dependencies 'data persistent'
+     **/
+    implementation 'android.arch.persistence.room:runtime:' + rootProject.librariesVersions.roomLibraryVersion
+    annotationProcessor 'android.arch.persistence.room:compiler:' + rootProject.librariesVersions.roomLibraryVersion
+    /**
+     *  firebase sdk dependencies
+     **/
+    implementation 'com.google.firebase:firebase-core:' + rootProject.librariesVersions.firebaseSdkVersion
+    implementation 'com.google.firebase:firebase-database:' + rootProject.librariesVersions.firebaseSdkVersion
+    implementation 'com.firebaseui:firebase-ui-auth:' + rootProject.librariesVersions.firebaseUIVersion
+    /**
+     *  butterKnife dependency 'injecting views'
+     **/
+    implementation 'com.jakewharton:butterknife:' + rootProject.librariesVersions.butterKnifeLibraryVersion
+    annotationProcessor 'com.jakewharton:butterknife-compiler:' + rootProject.librariesVersions.butterKnifeLibraryVersion
+    /**
+     * glide library dependency 'photo processing'
+     **/
+    implementation 'com.github.bumptech.glide:glide:' + rootProject.librariesVersions.glideLibraryVersion
+    annotationProcessor 'com.github.bumptech.glide:compiler:' + rootProject.librariesVersions.glideLibraryVersion
+    /**
+     *  shapeOfView dependency
+     **/
+    implementation 'com.github.florent37:shapeofview:' + rootProject.librariesVersions.shapeOfViewLibraryVersion
+    /**
+     *  kenBurnsView dependency
+     **/
+    implementation 'com.flaviofaria:kenburnsview:' + rootProject.librariesVersions.kenBurnsViewLibraryVersion
+    /**
+     *  transitionEveryWhere dependency
+     **/
+    implementation 'com.andkulikov:transitionseverywhere:' + rootProject.librariesVersions.transitionsEWLibraryVersion
+    /**
+     *  stripe dependency
+     *  just to validate the credit card
+     **/
+    implementation 'com.stripe:stripe-android:' + rootProject.librariesVersions.stripeLibraryVersion
+    /**
+     *  country code picker dependency
+     **/
+    implementation 'com.hbb20:ccp:' + rootProject.librariesVersions.countryPickerLibraryVersion
+    /**
+     * credit card form dependency
+     **/
+    implementation 'com.braintreepayments:card-form:' + rootProject.librariesVersions.creditCardFormLibraryVersion
+    /**
+     *  label view on image library dependency
+     **/
+    implementation 'com.github.linger1216:labelview:v' + rootProject.librariesVersions.labelViewLibraryVersion
+    /**
+     * material search view dependency
+     **/
+    implementation 'com.miguelcatalan:materialsearchview:' + rootProject.librariesVersions.materialSearchViewLibraryVersion
+    /**
+     *  alerter library dependency
+     **/
+    implementation 'com.tapadoo.android:alerter:' + rootProject.librariesVersions.alerterLibraryVersion
+    /**
+     * card slider layout manager for recyclerView dependency
+     **/
+    implementation 'com.ramotion.cardslider:card-slider:' + rootProject.librariesVersions.cardSliderLibraryVersion
+    /**
+     * parallax image view dependency
+     **/
+    implementation 'com.fmsirvent:parallaxeverywhere:' + rootProject.librariesVersions.parallaxEWLibraryVersion
+    /**
+     * time line view for tracking orders dependency
+     **/
+    implementation 'com.github.vipulasri:timelineview:' + rootProject.librariesVersions.timeLineViewLibraryVersion
+    /**
+     *  fab menu group dependency
+     **/
+    implementation 'com.github.clans:fab:' + rootProject.librariesVersions.fabsMenuLibraryVersion
+}
+apply plugin: 'com.google.gms.google-services'

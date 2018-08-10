@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categoriesCardView"
+    style="@style/CardViewStyle"
+    android:layout_margin="@dimen/categories_list_item_margin"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+    card_view:elevation="@dimen/cardview_default_elevation">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fmsirvent.ParallaxEverywhere.PEWImageView
+            android:id="@+id/categoryImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/categories_list_item_image_height"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/content_description_category_image"
+            android:scaleType="centerCrop"
+            app:srcCompat="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/categoryNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/however"
+            android:paddingBottom="@dimen/categories_list_item_name_padding_bottom"
+            android:paddingEnd="@dimen/categories_list_item_name_margin_end"
+            android:paddingStart="@dimen/categories_list_item_name_margin_start"
+            android:textColor="#fff"
+            android:textSize="@dimen/categories_list_item_name_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/categoryImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/categoryImageView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="@string/label_category_name" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

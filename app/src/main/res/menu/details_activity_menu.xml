@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cartMenuItemAction"
+        android:title="@string/menu_item_cart_title"
+        app:actionLayout="@layout/menu_item_details_activity"
+        app:showAsAction="always" />
+</menu>

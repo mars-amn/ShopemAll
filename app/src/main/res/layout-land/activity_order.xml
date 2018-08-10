@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/order_activity_parent_padding"
+        tools:context=".OrderActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cartImagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_activity_cart_recyclerview_height"
+            app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager" />
+
+        <LinearLayout
+            android:id="@+id/creditCardFormParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/order_user_details_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/order_activity_order_user_details_layout_margin"
+                android:layout_weight="1" />
+
+            <include
+                layout="@layout/order_credit_card_details_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/order_activity_credit_card_details_layout_margin"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalPriceOrderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_activity_total_price_text_margin_top"
+            android:text="@string/label_charged_msg" />
+
+        <Button
+            android:id="@+id/proceedToOrderButton"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/order_activity_order_button_margin_top"
+            android:text="@string/button_order_text"
+            android:textAllCaps="false" />
+
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/order_activity_progress_bar_margin_top" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

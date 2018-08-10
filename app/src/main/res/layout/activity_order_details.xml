@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/orderProductsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/order_details_activity_products_recyclerview_height"
+            android:layout_marginEnd="@dimen/order_details_activity_products_recyclerview_margin_end"
+            android:layout_marginStart="@dimen/order_details_activity_products_recyclerview_margin_start"
+            android:layout_marginTop="@dimen/order_details_activity_products_recyclerview_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextSwitcher
+            android:id="@+id/orderProductNameTextSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/order_details_activity_products_name_textswitcher_margin_start"
+            android:layout_marginTop="@dimen/order_details_activity_products_name_textswitcher_margin_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderProductsRecyclerView" />
+
+        <TextSwitcher
+            android:id="@+id/orderProductPriceTextSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/order_details_activity_products_name_textswitcher_margin_start"
+            android:layout_marginTop="@dimen/order_details_activity_products_name_textswitcher_margin_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderProductNameTextSwitcher" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/order_details_activity_user_name_margin_start"
+            android:layout_marginTop="@dimen/order_details_activity_user_name_margin_top"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/order_details_activity_default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderProductPriceTextSwitcher"
+            tools:text="@string/label_name" />
+
+        <TextView
+            android:id="@+id/userEnteredAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/order_details_activity_email_margin_start"
+            android:layout_marginTop="@dimen/order_details_activity_email_margin_top"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/order_details_activity_default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+            tools:text="@string/label_address" />
+
+        <TextView
+            android:id="@+id/userPhoneNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/order_details_activity_phone_margin_start"
+            android:layout_marginTop="@dimen/order_details_activity_phone_margin_top"
+            android:drawableStart="@drawable/ic_call_wrapped"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/order_details_activity_default_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userEnteredAddressTextView"
+            tools:text="@string/label_phone_number" />
+
+        <TextView
+            android:id="@+id/userPaymentPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/order_details_activity_payment_price_margin_end"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/order_details_activity_default_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderProductPriceTextSwitcher"
+            tools:text="@string/label_price" />
+
+        <TextView
+            android:id="@+id/userPaymentDiscountPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/order_details_activity_payment_price_margin_end"
+            android:layout_marginTop="@dimen/order_details_activity_payment_discount_margin_top"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/order_details_activity_default_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPaymentPriceTextView"
+            tools:text="@string/label_discount_price" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/orderStatusRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_details_activity_order_Status_recyclerview_margin_top"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPhoneNumberTextView" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

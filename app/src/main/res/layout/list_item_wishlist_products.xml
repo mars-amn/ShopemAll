@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wishlistedProductListParent"
+    style="@style/CardViewStyle"
+    android:layout_margin="@dimen/product_images_list_item_card_margin"
+    app:cardPreventCornerOverlap="false"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+    card_view:elevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/wishlistedProductImage"
+            android:layout_width="@dimen/wishlist_item_list_image_width"
+            android:layout_height="@dimen/wishlist_item_list_image_height"
+            android:contentDescription="@string/content_description_product_image"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:label_backgroundColor="@android:color/holo_red_dark"
+            app:label_distance="@dimen/wishlist_item_list_image_label_distance"
+            app:label_orientation="LEFT_TOP" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wishlistedProductNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/wishlist_item_list_name_margin"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/wishlist_item_list_name_text_size"
+                tools:text="@string/label_product_name" />
+
+            <TextView
+                android:id="@+id/wishlistedProductDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/wishlist_item_list_description_margin"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_light"
+                android:maxLines="3"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/wishlist_item_list_description_text_size"
+                tools:text="@string/label_product_description" />
+
+            <TextView
+                android:id="@+id/wishlistedProductPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/wishlist_item_list_price_margin"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="@dimen/wishlist_item_list_price_text_size"
+                tools:text="@string/label_product_price" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

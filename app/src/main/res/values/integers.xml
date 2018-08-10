@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- alerter duration -->
+    <integer name="alerter_default_duration">1000</integer>
+
+
+    <integer name="category_image_width">1080</integer>
+    <integer name="category_image_height">675</integer>
+</resources>

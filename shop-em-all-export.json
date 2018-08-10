@@ -1,0 +1,164 @@
+{
+  "Categories": {
+    "-LEwJgqwiV-v6IZJTMBj": {
+      "categoryImage": "https://goo.gl/bqdHHY",
+      "categoryName": "Electronics",
+      "categoryProducts": [
+        {
+          "category": "Electronics",
+          "code": 2,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/MPTmQ3",
+          "name": "HP Laptop - 15t Best Value touch",
+          "price": 1070,
+          "sale": 100
+        },
+        {
+          "category": "Electronics",
+          "code": 3,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/3khavA",
+          "name": "HP - 14z Laptop",
+          "price": 329,
+          "sale": 20
+        },
+        {
+          "category": "Electronics",
+          "code": 4,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/EWuFHP",
+          "name": "HP Notebook - 15-bw088nr",
+          "price": 450,
+          "sale": 20
+        },
+        {
+          "category": "Electronics",
+          "code": 5,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/u15X1r",
+          "name": " \"65\" Class Q9FN QLED Smart 4K UHD TV (2018)",
+          "price": 3500,
+          "sale": 20
+        },
+        {
+          "category": "Electronics",
+          "code": 6,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/E6ZVev",
+          "name": " \"65\" Class Q7FN QLED Smart 4K UHD TV (2018)",
+          "price": 3400,
+          "sale": 20
+        }
+      ]
+    },
+    "-LEwJgqzM3IUPxj8EOdr": {
+      "categoryImage": "https://goo.gl/BEBqQ7",
+      "categoryName": "Phones",
+      "categoryProducts": [
+        {
+          "category": "Phones",
+          "code": 7,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/fCKopQ",
+          "name": "Galaxy S7 32GB (US Cellular)",
+          "price": 2222,
+          "sale": 500
+        },
+        {
+          "category": "Phones",
+          "code": 8,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/Ugz2oU",
+          "name": "Xperia™ XZ Premium",
+          "price": 2222
+        },
+        {
+          "category": "Phones",
+          "code": 9,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/7j3Diy",
+          "name": "Nokia 8 Sirocco",
+          "price": 700,
+          "sale": 100
+        }
+      ]
+    },
+    "-LEwJgr1wpOD1mX6_fE8": {
+      "categoryImage": "https://goo.gl/hXg9vJ",
+      "categoryName": "Games",
+      "categoryProducts": [
+        {
+          "category": "Games",
+          "code": 10,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/z3URhv",
+          "name": "Mafia III (PS4)",
+          "price": 30,
+          "sale": 3
+        },
+        {
+          "category": "Games",
+          "code": 11,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/qZP68Q",
+          "name": "Tom Clancy's Ghost Recon: Wildlands (PS4)",
+          "price": 39.99
+        },
+        {
+          "category": "Games",
+          "code": 12,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/z6eyGH",
+          "name": "Call of Duty Black Ops 4 (PlayStation 4)",
+          "price": 79.99
+        },
+        {
+          "category": "Games",
+          "code": 13,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/dMXU4D",
+          "name": "FIFA 18 (PS4)",
+          "price": 29.99
+        },
+        {
+          "category": "Games",
+          "code": 14,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/T6tLi8",
+          "name": "Red Dead Redemption 2 (PS4)",
+          "price": 79.99
+        }
+      ]
+    },
+    "-LEwJgr3iTGfgBCn2Xla": {
+      "categoryImage": "https://goo.gl/RgWGRp",
+      "categoryName": "Health & Fitness",
+      "categoryProducts": [
+        {
+          "category": "Health & Fitness",
+          "code": 15,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/XEakzE",
+          "name": "Custom Made Sport Backpack With Custom Panel",
+          "price": 10
+        },
+        {
+          "category": "Health & Fitness",
+          "code": 16,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/7ufpBU",
+          "name": "Foldable Sports Tote",
+          "price": 5.65
+        },
+        {
+          "category": "Health & Fitness",
+          "code": 17,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "image": "https://goo.gl/N2vtT6",
+          "name": "Sanctuary Versatile Sports Backpack",
+          "price": 13
+        }
+      ]
+    }
+  }
+}

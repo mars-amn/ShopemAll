@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.google.gms:google-services:4.0.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 19
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+
+    librariesVersions = [
+            supportLibraryVersion           : '27.1.1',
+            constraintLayoutVersion         : '1.1.2',
+            roomLibraryVersion              : '1.1.1',
+            firebaseSdkVersion              : '16.0.1',
+            firebaseUIVersion               : '4.0.1',
+            butterKnifeLibraryVersion       : '8.8.1',
+            glideLibraryVersion             : '4.7.1',
+            shapeOfViewLibraryVersion       : '1.1.2',
+            kenBurnsViewLibraryVersion      : '1.0.7',
+            transitionsEWLibraryVersion     : '1.7.9',
+            stripeLibraryVersion            : '7.1.0',
+            countryPickerLibraryVersion     : '2.2.0',
+            creditCardFormLibraryVersion    : '3.3.0',
+            labelViewLibraryVersion         : '1.1.2',
+            materialSearchViewLibraryVersion: '1.4.0',
+            alerterLibraryVersion           : '2.0.6',
+            cardSliderLibraryVersion        : '0.2.0',
+            parallaxEWLibraryVersion        : '1.0.4',
+            materialViewPagerLibraryVersion : '1.2.3',
+            timeLineViewLibraryVersion      : '1.0.6',
+            fabsMenuLibraryVersion          : '1.6.4'
+    ]
+}
