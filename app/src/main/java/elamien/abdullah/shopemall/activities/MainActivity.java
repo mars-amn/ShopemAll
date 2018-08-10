@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             showRetryButton();
             hideFeaturedProductsLabel();
-            connectionErrorMessage();
+            showConnectionErrorMessage();
         }
     }
 
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mFTProductsLabel.setVisibility(View.VISIBLE);
     }
 
-    private void connectionErrorMessage() {
+    private void showConnectionErrorMessage() {
         Alerter.create(this)
                 .setTitle(R.string.connection_alerter_title)
                 .setText(R.string.connection_alerter_text)
