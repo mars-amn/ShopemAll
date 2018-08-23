@@ -16,48 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/NoActionBar" />
-
         <activity
             android:name=".activities.CategoryProductsActivity"
             android:launchMode="singleTop"
             android:parentActivityName=".activities.MainActivity"
             android:theme="@style/NoActionBar" />
-
         <activity
             android:name=".activities.ProductDetailsActivity"
             android:parentActivityName=".activities.CategoryProductsActivity" />
-
         <activity
             android:name=".activities.CartActivity"
             android:theme="@style/NoActionBar" />
-
         <activity
             android:name=".activities.OrderActivity"
             android:parentActivityName=".activities.CartActivity" />
-
         <activity
             android:name=".activities.WishlistProductsActivity"
             android:parentActivityName=".activities.MainActivity" />
-
         <activity
             android:name=".activities.WishlistProductDetailsActivity"
             android:parentActivityName=".activities.WishlistProductsActivity" />
-
         <activity
             android:name=".activities.SearchableActivity"
             android:parentActivityName=".activities.CategoryProductsActivity" />
-
         <activity
             android:name=".activities.UserOrdersActivity"
             android:launchMode="singleTop"
             android:parentActivityName=".activities.MainActivity"
             android:theme="@style/NoActionBar" />
-
         <activity
             android:name=".activities.OrderDetailsActivity"
             android:parentActivityName=".activities.UserOrdersActivity" />
@@ -83,6 +73,10 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:theme="@style/NoActionBar"></activity>
     </application>
 
 </manifest>

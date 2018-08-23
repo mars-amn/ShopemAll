@@ -99,11 +99,7 @@ public class CategoryProductsActivity extends AppCompatActivity {
         mSearchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-
-                Intent intent = new Intent(CategoryProductsActivity.this, SearchableActivity.class);
-                intent.putExtra(Intent.EXTRA_TEXT, query);
-                intent.putExtra(Intent.EXTRA_TITLE, mCategory);
-                startActivity(intent);
+                launchSearchActivity(query);
                 return false;
             }
 
@@ -112,6 +108,13 @@ public class CategoryProductsActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void launchSearchActivity(String query) {
+        Intent intent = new Intent(CategoryProductsActivity.this, SearchableActivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT, query);
+        intent.putExtra(Intent.EXTRA_TITLE, mCategory);
+        startActivity(intent);
     }
 
     @Override

@@ -151,5 +151,11 @@
     <string name="menu_item_wishlist_title">My Wishlist</string>
     <string name="menu_item_sign_out_title">Sign out</string>
 
+    <string name="membership_register_label">Already a Member? Sign in.</string>
+    <string name="register_label">Register</string>
+    <string name="register_email_hint">E-Mail</string>
+    <string name="register_password_hint">Password</string>
+    <string name="sign_in_with_google_content_description">Sign in with Google</string>
+
 
 </resources>

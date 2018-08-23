@@ -189,6 +189,15 @@
     <dimen name="widget_list_item_product_name_margin">4dp</dimen>
     <dimen name="widget_list_item_product_price_margin">4dp</dimen>
     <dimen name="cart_list_item_margin_end">8dp</dimen>
+    <dimen name="register_activity_register_label_margin_top">20dp</dimen>
+    <dimen name="register_activity_register_email_layout_margin_end">8dp</dimen>
+    <dimen name="register_activity_register_email_layout_margin_start">8dp</dimen>
+    <dimen name="register_activity_register_password_layout_margin_end">8dp</dimen>
+    <dimen name="register_activity_register_password_layout_margin_start">8dp</dimen>
+    <dimen name="register_activity_register_password_layout_margin_top">20dp</dimen>
+    <dimen name="register_activity_register_signin_google__margin_end">20dp</dimen>
+    <dimen name="register_activity_register_signin_google__margin_start">20dp</dimen>
+    <dimen name="register_activity_register_signin_google__margin_top">20dp</dimen>
 
 
 </resources>

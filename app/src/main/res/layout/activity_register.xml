@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/signupLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/register_activity_register_label_margin_top"
+        android:fontFamily="@font/poppins"
+        android:text="@string/register_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/register_activity_register_email_layout_margin_end"
+        android:layout_marginStart="@dimen/register_activity_register_email_layout_margin_start"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupLabelTextView">
+
+        <EditText
+            android:id="@+id/registerEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|center"
+            android:hint="@string/register_email_hint"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/register_activity_register_password_layout_margin_end"
+        android:layout_marginStart="@dimen/register_activity_register_password_layout_margin_start"
+        android:layout_marginTop="@dimen/register_activity_register_password_layout_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/registerPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|center"
+            android:hint="@string/register_password_hint"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginMemberLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/membership_register_label"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textColorLink="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
+
+    <ImageButton
+        android:id="@+id/signinWithGoogleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/register_activity_register_signin_google__margin_end"
+        android:layout_marginStart="@dimen/register_activity_register_signin_google__margin_start"
+        android:layout_marginTop="@dimen/register_activity_register_signin_google__margin_top"
+        android:background="@drawable/google_sign_in_state"
+        android:contentDescription="@string/sign_in_with_google_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginMemberLabelTextView" />
+</android.support.constraint.ConstraintLayout>
