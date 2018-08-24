@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerLayoutParent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="activities.RegisterActivity">
@@ -26,6 +27,7 @@
         android:layout_marginEnd="@dimen/register_activity_register_email_layout_margin_end"
         android:layout_marginStart="@dimen/register_activity_register_email_layout_margin_start"
         android:layout_marginTop="20dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupLabelTextView">
@@ -33,12 +35,16 @@
         <EditText
             android:id="@+id/registerEmailEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="@dimen/register_activity_email_drawable_padding"
+            android:drawableStart="@drawable/ic_mail"
             android:ems="10"
             android:gravity="start|center"
             android:hint="@string/register_email_hint"
             android:inputType="textEmailAddress"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:padding="@dimen/register_activity_email_padding" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -49,28 +55,35 @@
         android:layout_marginEnd="@dimen/register_activity_register_password_layout_margin_end"
         android:layout_marginStart="@dimen/register_activity_register_password_layout_margin_start"
         android:layout_marginTop="@dimen/register_activity_register_password_layout_margin_top"
+        android:background="@android:color/transparent"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailLayout"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/secondaryColor">
 
         <EditText
             android:id="@+id/registerPasswordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="@dimen/register_activity_password_drawable_padding"
+            android:drawableStart="@drawable/ic_lock"
             android:ems="10"
             android:gravity="start|center"
             android:hint="@string/register_password_hint"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:padding="@dimen/register_activity_password_padding" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:id="@+id/loginMemberLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/register_activity_sign_up_membership_label_margin_end"
+        android:layout_marginTop="@dimen/register_activity_sign_up_membership_label_margin_top"
         android:text="@string/membership_register_label"
         android:textAppearance="@style/Base.TextAppearance.AppCompat"
         android:textColorLink="@color/secondaryColor"
@@ -83,11 +96,36 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/register_activity_register_signin_google__margin_end"
         android:layout_marginStart="@dimen/register_activity_register_signin_google__margin_start"
-        android:layout_marginTop="@dimen/register_activity_register_signin_google__margin_top"
         android:background="@drawable/google_sign_in_state"
         android:contentDescription="@string/sign_in_with_google_content_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/register_activity_sign_up_button_margin_end"
+        android:layout_marginStart="@dimen/register_activity_sign_up_button_margin_start"
+        android:layout_marginTop="@dimen/register_activity_sign_up_button_margin_top"
+        android:background="@drawable/sigup_button"
+        android:text="@string/register_activity_sign_up_button_label"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginMemberLabelTextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_activity_auth_google_or_label_margin_top"
+        android:text="@string/auth_with_google_or_label"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton" />
 </android.support.constraint.ConstraintLayout>

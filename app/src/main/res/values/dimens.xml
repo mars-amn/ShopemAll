@@ -198,6 +198,16 @@
     <dimen name="register_activity_register_signin_google__margin_end">20dp</dimen>
     <dimen name="register_activity_register_signin_google__margin_start">20dp</dimen>
     <dimen name="register_activity_register_signin_google__margin_top">20dp</dimen>
+    <dimen name="register_activity_auth_google_or_label_margin_top">8dp</dimen>
+    <dimen name="register_activity_sign_up_button_margin_top">32dp</dimen>
+    <dimen name="register_activity_sign_up_button_margin_start">8dp</dimen>
+    <dimen name="register_activity_sign_up_button_margin_end">8dp</dimen>
+    <dimen name="register_activity_sign_up_membership_label_margin_end">16dp</dimen>
+    <dimen name="register_activity_sign_up_membership_label_margin_top">8dp</dimen>
+    <dimen name="register_activity_email_drawable_padding">4dp</dimen>
+    <dimen name="register_activity_email_padding">4dp</dimen>
+    <dimen name="register_activity_password_drawable_padding">4dp</dimen>
+    <dimen name="register_activity_password_padding">4dp</dimen>
 
 
 </resources>
