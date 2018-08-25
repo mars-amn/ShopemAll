@@ -208,6 +208,7 @@
     <dimen name="register_activity_email_padding">4dp</dimen>
     <dimen name="register_activity_password_drawable_padding">4dp</dimen>
     <dimen name="register_activity_password_padding">4dp</dimen>
+    <dimen name="register_activity_image_height">120dp</dimen>
 
 
 </resources>

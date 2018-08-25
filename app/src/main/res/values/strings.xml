@@ -158,6 +158,7 @@
     <string name="sign_in_with_google_content_description">Sign in with Google</string>
     <string name="auth_with_google_or_label">Or</string>
     <string name="register_activity_sign_up_button_label">Sign up.</string>
+    <string name="register_activity_image">https://goo.gl/qExfGq</string>
 
 
 </resources>

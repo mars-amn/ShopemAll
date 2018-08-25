@@ -29,7 +29,7 @@
             android:id="@+id/categoryNameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/however"
+            android:background="@drawable/category_background"
             android:paddingBottom="@dimen/categories_list_item_name_padding_bottom"
             android:paddingEnd="@dimen/categories_list_item_name_margin_end"
             android:paddingStart="@dimen/categories_list_item_name_margin_start"

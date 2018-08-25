@@ -1,10 +1,7 @@
 package elamien.abdullah.shopemall.activities;
 
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
@@ -13,11 +10,11 @@ import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.transition.Transition;
+import com.flaviofaria.kenburnsview.KenBurnsView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,27 +28,30 @@ public class RegisterActivity extends AppCompatActivity {
     TextView existedMembershipLabel;
     @BindView(R.id.registerLayoutParent)
     ConstraintLayout registerLayoutParent;
+    @BindView(R.id.registerImage)
+    KenBurnsView registerImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setFullScreenWindow();
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
-      //  loadBackgroundImage();
+        loadRegisterImage();
         setupExistedMembershipLabel();
     }
 
-    private void loadBackgroundImage() {
+    private void setFullScreenWindow() {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+    }
+
+    private void loadRegisterImage() {
         GlideApp.with(this)
-                .load("https://goo.gl/qExfGq")
+                .load(getString(R.string.register_activity_image))
                 .placeholder(R.drawable.place_holder)
                 .error(R.drawable.error_holder)
-                .into(new SimpleTarget<Drawable>() {
-                    @Override
-                    public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
-                        registerLayoutParent.setBackground(resource);
-                    }
-                });
+                .into(registerImage);
     }
 
     private void setupExistedMembershipLabel() {
@@ -76,5 +76,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     @OnClick(R.id.signinWithGoogleImageView)
     public void onSigninGoogleClick() {
+    }
+
+    @OnClick(R.id.signupButton)
+    public void onSignupButtonClick() {
     }
 }
