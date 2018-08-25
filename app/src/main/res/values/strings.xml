@@ -159,6 +159,8 @@
     <string name="auth_with_google_or_label">Or</string>
     <string name="register_activity_sign_up_button_label">Sign up.</string>
     <string name="register_activity_image">https://goo.gl/qExfGq</string>
+    <string name="register_email_error_msg">Please enter valid e-mail</string>
+    <string name="register_password_error_msg">Enter valid password!</string>
 
 
 </resources>
