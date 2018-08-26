@@ -1,8 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.LoginActivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/loginImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_activity_image_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_activity_label_margin_top"
+        android:background="@drawable/register_background"
+        android:fontFamily="@font/poppins"
+        android:paddingBottom="@dimen/login_activity_label_padding_bottom"
+        android:paddingEnd="@dimen/login_activity_label_margin_end"
+        android:paddingStart="@dimen/login_activity_label_margin_start"
+        android:paddingTop="@dimen/login_activity_label_padding"
+        android:text="@string/login_activity_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/login_activity_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginImage" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/login_activity_email_layout_margin_end"
+        android:layout_marginStart="@dimen/login_activity_email_layout_margin_start"
+        android:layout_marginTop="@dimen/login_activity_email_layout_margin_top"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLabel">
+
+        <EditText
+            android:id="@+id/loginEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_email_edittext_height"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_mail"
+            android:ems="10"
+            android:gravity="start|center"
+            android:hint="@string/register_email_hint"
+            android:inputType="textEmailAddress"
+            android:padding="4dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginPasswordTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/login_activity_password_layout_margin_end"
+        android:layout_marginStart="@dimen/login_activity_password_layout_margin_start"
+        android:layout_marginTop="@dimen/login_activity_password_layout_margin_top"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextLayout"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/loginPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="@dimen/register_activity_email_drawable_padding"
+            android:drawableStart="@drawable/ic_lock"
+            android:ems="10"
+            android:hint="@string/register_password_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="@dimen/register_activity_email_padding" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/login_activity_login_button_margin_end"
+        android:layout_marginStart="@dimen/login_activity_login_button_margin_start"
+        android:layout_marginTop="@dimen/login_activity_login_button_margin_top"
+        android:background="@drawable/sigup_button"
+        android:text="@string/login_activity_login_button_label"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordTextLayout" />
+
+    <TextView
+        android:id="@+id/loginGoogleAuthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_activity_auth_google_or_label_margin_top"
+        android:text="@string/auth_with_google_or_label"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+
+    <ImageButton
+        android:id="@+id/loginGoogleAuthImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/register_activity_register_signin_google__margin_end"
+        android:layout_marginStart="@dimen/register_activity_register_signin_google__margin_start"
+        android:background="@drawable/google_sign_in_state"
+        android:contentDescription="@string/sign_in_with_google_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginGoogleAuthLabel" />
 
 </android.support.constraint.ConstraintLayout>

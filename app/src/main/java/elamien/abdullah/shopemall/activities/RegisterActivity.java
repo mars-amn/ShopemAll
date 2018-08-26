@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
     private static final String TAG = RegisterActivity.class.getSimpleName();
 
     // TODO: 8/25/2018 replace it with your own.
-    private static final String WEB_API_KEY = "";
+    private static final String WEB_API_KEY = "replace-it-with-your-web-api-key";
     private static final int RC_GOOGLE_SIGNIN = 4;
 
     @BindView(R.id.loginMemberLabelTextView)

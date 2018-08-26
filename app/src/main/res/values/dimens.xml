@@ -209,6 +209,23 @@
     <dimen name="register_activity_password_drawable_padding">4dp</dimen>
     <dimen name="register_activity_password_padding">4dp</dimen>
     <dimen name="register_activity_image_height">120dp</dimen>
+    <dimen name="login_activity_image_height">120dp</dimen>
+    <dimen name="login_activity_label_margin_top">20dp</dimen>
+    <dimen name="login_activity_label_padding_bottom">6dp</dimen>
+    <dimen name="login_activity_label_margin_end">18dp</dimen>
+    <dimen name="login_activity_label_margin_start">18dp</dimen>
+    <dimen name="login_activity_label_padding">6dp</dimen>
+    <dimen name="login_activity_label_text_size">18sp</dimen>
+    <dimen name="login_activity_email_layout_margin_end">8dp</dimen>
+    <dimen name="login_activity_email_layout_margin_start">8dp</dimen>
+    <dimen name="login_activity_email_layout_margin_top">20dp</dimen>
+    <dimen name="login_activity_email_edittext_height">48dp</dimen>
+    <dimen name="login_activity_password_layout_margin_end">8dp</dimen>
+    <dimen name="login_activity_password_layout_margin_start">8dp</dimen>
+    <dimen name="login_activity_password_layout_margin_top">20dp</dimen>
+    <dimen name="login_activity_login_button_margin_end">8dp</dimen>
+    <dimen name="login_activity_login_button_margin_start">8dp</dimen>
+    <dimen name="login_activity_login_button_margin_top">32dp</dimen>
 
 
 </resources>

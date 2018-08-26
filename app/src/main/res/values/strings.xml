@@ -161,6 +161,8 @@
     <string name="register_activity_image">https://goo.gl/qExfGq</string>
     <string name="register_email_error_msg">Please enter valid e-mail</string>
     <string name="register_password_error_msg">Enter valid password!</string>
+    <string name="login_activity_login_button_label">Login</string>
+    <string name="login_activity_label">Login</string>
 
 
 </resources>

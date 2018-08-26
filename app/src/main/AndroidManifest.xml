@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.LoginActivity"
-            android:parentActivityName=".activities.RegisterActivity">
+            android:parentActivityName=".activities.RegisterActivity"
+            android:theme="@style/NoActionBar">
 
         </activity>
         <activity
