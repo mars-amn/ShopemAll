@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import elamien.abdullah.shopemall.GlideApp;
 import elamien.abdullah.shopemall.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -42,7 +43,16 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         mAuth = FirebaseAuth.getInstance();
+        loadImage();
 
+    }
+
+    private void loadImage() {
+        GlideApp.with(this)
+                .load("https://goo.gl/kXrupd")
+                .placeholder(R.drawable.place_holder)
+                .error(R.drawable.error_holder)
+                .into(loginImage);
     }
 
     @OnClick(R.id.loginButton)
