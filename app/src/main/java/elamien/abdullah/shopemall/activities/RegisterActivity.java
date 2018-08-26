@@ -18,7 +18,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -109,7 +108,7 @@ public class RegisterActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View view) {
-                // TODO: 8/25/2018 add sign in Activity.
+                launchLoginActivity();
             }
 
             @Override
@@ -122,6 +121,11 @@ public class RegisterActivity extends AppCompatActivity {
         existedMembershipLabel.setText(textLink);
         existedMembershipLabel.setMovementMethod(LinkMovementMethod.getInstance());
         existedMembershipLabel.setHighlightColor(Color.TRANSPARENT);
+    }
+
+    private void launchLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
     private boolean isTextEmpty(EditText editText) {
