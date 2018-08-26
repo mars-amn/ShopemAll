@@ -12,10 +12,17 @@ import android.view.WindowManager;
 import android.widget.EditText;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.GoogleAuthProvider;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,6 +34,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = LoginActivity.class.getSimpleName();
 
+    // TODO: 8/26/2018 replace it with your project key.
+    private static final String WEB_API_KEY = "replace-it-with-your-web-api-key";
+    private static final int RC_GOOGLE_SIGNIN = 9;
+
     @BindView(R.id.loginImage)
     KenBurnsView loginImage;
     @BindView(R.id.loginEmailEditText)
@@ -35,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText loginPasswordEditText;
 
     private FirebaseAuth mAuth;
+    private GoogleSignInClient mGoogleClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +56,15 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         mAuth = FirebaseAuth.getInstance();
         loadImage();
+        setupGoogleClient();
+    }
 
+    private void setupGoogleClient() {
+        GoogleSignInOptions signInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(WEB_API_KEY)
+                .requestEmail()
+                .build();
+        mGoogleClient = GoogleSignIn.getClient(this, signInOptions);
     }
 
     private void loadImage() {
@@ -53,6 +73,42 @@ public class LoginActivity extends AppCompatActivity {
                 .placeholder(R.drawable.place_holder)
                 .error(R.drawable.error_holder)
                 .into(loginImage);
+    }
+
+    @OnClick(R.id.loginGoogleAuthImageButton)
+    public void onGoogleButtonClick() {
+        Intent intent = mGoogleClient.getSignInIntent();
+        startActivityForResult(intent, RC_GOOGLE_SIGNIN);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == RC_GOOGLE_SIGNIN){
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            try {
+                GoogleSignInAccount account = task.getResult(ApiException.class);
+                signinGoogleUser(account);
+            } catch (ApiException e) {
+                Log.d(TAG, e.getMessage());
+            }
+        }
+    }
+
+    private void signinGoogleUser(GoogleSignInAccount account) {
+        AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
+        mAuth.signInWithCredential(credential)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            launchMainActivity();
+                        } else {
+                            Log.d(TAG, task.getException().getMessage());
+                        }
+                    }
+                });
     }
 
     @OnClick(R.id.loginButton)
