@@ -122,9 +122,9 @@
 
 
     <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:id="@+id/loginGoogleAuthImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/register_activity_register_signin_google__margin_end"
         android:layout_marginStart="@dimen/register_activity_register_signin_google__margin_start"
         android:background="@drawable/google_sign_in_state"
