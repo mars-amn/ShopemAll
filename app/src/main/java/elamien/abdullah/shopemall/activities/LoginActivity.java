@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
@@ -37,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setFullScreenWindow();
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         mAuth = FirebaseAuth.getInstance();
@@ -83,5 +85,10 @@ public class LoginActivity extends AppCompatActivity {
     private boolean isEmail(EditText emailET) {
         String email = emailET.getText().toString().trim();
         return (!TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches());
+    }
+
+    private void setFullScreenWindow() {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 }
